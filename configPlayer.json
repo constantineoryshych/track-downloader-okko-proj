@@ -1,0 +1,10 @@
+{
+    "directoriesWhichDownloadDisabled" : [
+        "PLYLIST",
+        "MUSIK"
+    ],
+    "remmoteSourseServer": {
+        "host":   "",
+        "port":    8080
+    } 
+}

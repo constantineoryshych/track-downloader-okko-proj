@@ -1,0 +1,50 @@
+{
+  "name": "track-downloader-okko-proj",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --runInBand --config ./jest.config.js ./src/ts/infrastructure/playlist-parser/__tests__/PlaylistParser.spec.ts",
+    "babel-node": "babel-node ./src/ts/index.ts --extensions \".ts\"",
+    "dev": "nodemon --exec npm run babel-node --inspect ./src/ts/index.ts",
+    "prod": "webpack --config ./webpack.config.js",
+    "clear-temp": "rimraf ./temp/*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/constantineoryshych/track-downloader-okko-proj.git"
+  },
+  "author": "bbt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/constantineoryshych/track-downloader-okko-proj.git"
+  },
+  "homepage": "https://github.com/constantineoryshych/track-downloader-okko-proj.git",
+  "devDependencies": {
+    "@babel/core": "^7.6.0",
+    "@babel/node": "^7.6.1",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/plugin-proposal-object-rest-spread": "^7.5.5",
+    "@babel/preset-env": "^7.6.0",
+    "@babel/preset-typescript": "^7.6.0",
+    "@types/dotenv": "^6.1.1",
+    "@types/jest": "^24.0.18",
+    "@types/node": "^12.7.4",
+    "babel-loader": "^8.0.6",
+    "jest": "^24.9.0",
+    "json-loader": "^0.5.7",
+    "nodemon": "^1.19.2",
+    "prettier": "^1.18.2",
+    "ts-jest": "^24.0.2",
+    "ts-loader": "^6.0.4",
+    "typescript": "^3.6.2",
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.8"
+  },
+  "dependencies": {
+    "async": "^3.1.0",
+    "change-file-time": "^0.1.0",
+    "progress-stream": "^2.0.0",
+    "pug": "^2.0.4"
+  }
+}

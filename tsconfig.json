@@ -1,0 +1,25 @@
+{
+	"compilerOptions":{
+		"module": "commonjs",
+		"noImplicitAny": false,
+		"allowJs": true,
+		"removeComments": true,
+	    "resolveJsonModule" : true,
+		"preserveConstEnums": true,
+		"sourceMap": true,
+		"noEmitOnError": true,
+		"target": "es5",
+		"moduleResolution": "node",
+		"allowSyntheticDefaultImports": true,
+		"strictNullChecks": true,
+		"esModuleInterop": true,
+		"lib": ["es2015"],
+		"typeRoots": ["node_modules/@types"],
+		"baseUrl": "./src",
+		"paths": {
+		  "*": ["*"]
+		}
+	},
+	"include": ["src/**/ts/**/*"],
+	"exclude": ["node_modules", "**/*.spec.ts"]
+}
